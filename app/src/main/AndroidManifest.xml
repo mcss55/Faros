@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Faros"
         tools:targetApi="31">
         <activity
+            android:name=".Activities.ForgotPasswordActivities.SuccessResetPass"
+            android:exported="false" />
+        <activity
             android:name=".Activities.ForgotPasswordActivities.ResetPassword"
             android:exported="false">
             <meta-data

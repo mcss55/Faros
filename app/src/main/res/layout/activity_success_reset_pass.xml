@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ForgotPasswordActivities.SuccessResetPass">
+
+    <Button
+        android:id="@+id/registerButton2"
+        android:layout_width="338dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="37dp"
+        android:background="@drawable/roundedcornernotfilled"
+        android:fontFamily="@font/interregular"
+        android:text="Yenidən daxil ol"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="145dp"
+        android:src="@drawable/success4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="176dp"
+        android:fontFamily="@font/interbold"
+        android:text="Şifrən yeniləndi!"
+        android:textColor="#1f1f1f"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="233dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="68dp"
+        android:text="Artıq yeni şifrəni istfadə edə bilərsən!Bu səfər unutma ;)"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="46dp"
+        android:layout_height="36dp"
+        android:src="@drawable/done"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.531" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
