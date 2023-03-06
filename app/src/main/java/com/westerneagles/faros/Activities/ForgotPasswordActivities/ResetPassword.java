@@ -53,10 +53,9 @@ public class ResetPassword extends AppCompatActivity {
         });
 
         binding.editTextRePass.setOnTouchListener((v, event) -> {
-            final int DRAWABLE_RIGHT = 2;
 
             if(event.getAction() == MotionEvent.ACTION_UP) {
-                if(event.getRawX() >= (binding.editTextRePass.getRight() - binding.editTextRePass.getCompoundDrawables()[DRAWABLE_RIGHT].getBounds().width())) {
+                if(event.getRawX() >= (binding.editTextRePass.getRight() - binding.editTextRePass.getCompoundDrawables()[2].getBounds().width())) {
                     if (eyeClosed) {
                         binding.editTextRePass.setInputType(InputType.TYPE_TEXT_VARIATION_PERSON_NAME);
                         binding.editTextRePass.setSelection(binding.editTextRePass.length());
@@ -75,7 +74,6 @@ public class ResetPassword extends AppCompatActivity {
         binding.backLogoResetPass.setOnClickListener(view1 -> {
             finish();
             Animatoo.INSTANCE.animateSlideRight(ResetPassword.this);
-
         });
 
 
