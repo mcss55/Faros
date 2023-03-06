@@ -75,7 +75,7 @@ public class ResetPassword extends AppCompatActivity {
         binding.backLogoResetPass.setOnClickListener(view1 -> {
             finish();
             Animatoo.INSTANCE.animateSlideRight(ResetPassword.this);
-            //
+
         });
 
 
