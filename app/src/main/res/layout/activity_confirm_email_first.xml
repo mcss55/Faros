@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ForgotPasswordActivities.ConfirmEmailFirst">
+
+    <Button
+        android:id="@+id/loginButton2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="37dp"
+        android:background="@drawable/roundedcornernotfilled"
+        android:fontFamily="@font/interregular"
+        android:text="Doğrulama kodunu göndər"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSoyad2" />
+
+    <EditText
+        android:id="@+id/editTextSoyad2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="37dp"
+        android:ems="10"
+        android:hint="ad@numune.az"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#C0BCBC"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <ImageView
+        android:id="@+id/backLogoConfirmEmailFirst"
+        android:layout_width="30dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="49dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="31dp"
+        android:fontFamily="@font/interblack"
+        android:text="Mail adresini doğrula"
+        android:textColor="#1f1f1f"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backLogoConfirmEmailFirst" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="184dp"
+        android:fontFamily="@font/interbold"
+        android:text="Mail adresin"
+        android:textColor="#7C7C7C"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

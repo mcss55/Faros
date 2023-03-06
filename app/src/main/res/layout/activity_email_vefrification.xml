@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Core.EmailVefrification">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="407dp"
+        android:layout_height="554dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="85dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintVertical_bias="0.372">
+
+        <EditText
+            android:id="@+id/editTextNumberSigned3"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="205dp"
+            android:background="@drawable/otpsquare"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:fontFamily="@font/interbold"
+            android:hint="-"
+            android:inputType="numberSigned"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="#120D26"
+            android:textSize="30sp"
+            app:layout_constraintStart_toEndOf="@+id/editTextNumberSigned2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextNumberSigned4"
+            android:layout_width="51dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="205dp"
+            android:layout_marginEnd="75dp"
+            android:background="@drawable/otpsquare"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:fontFamily="@font/interbold"
+            android:hint="-"
+            android:inputType="numberSigned"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="#120D26"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/editTextNumberSigned3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextNumberSigned"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="205dp"
+            android:background="@drawable/otpsquare"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:fontFamily="@font/interbold"
+            android:hint="-"
+            android:inputType="numberSigned"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="#120D26"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextNumberSigned2"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="205dp"
+            android:background="@drawable/otpsquare"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:fontFamily="@font/interbold"
+            android:hint="-"
+            android:inputType="numberSigned"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textColor="#120D26"
+            android:textSize="30sp"
+            app:layout_constraintStart_toEndOf="@+id/editTextNumberSigned"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/resendCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/intermedium"
+            android:text="Kodu təkrar göndər"
+            android:textColor="#FF6550"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumberSigned" />
+
+        <Button
+            android:id="@+id/loginButton4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="173dp"
+            android:layout_marginEnd="37dp"
+            android:background="@drawable/roundedcornernotfilled"
+            android:fontFamily="@font/interregular"
+            android:text="Doğrula"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/resendCode" />
+
+        <TextView
+            android:id="@+id/timerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="169dp"
+            android:fontFamily="@font/intermedium"
+            android:textColor="#ff6550"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/resendCode"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumberSigned3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/interblack"
+        android:text="Doğrulama kodunu daxil et"
+        android:textColor="#1f1f1f"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backLogoEmailVerification" />
+
+    <ImageView
+        android:id="@+id/backLogoEmailVerification"
+        android:layout_width="30dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
