@@ -61,7 +61,7 @@ public class EmailVefrification extends AppCompatActivity {
                 binding.resendCode.setTextColor(ResourcesCompat.getColor(getResources(), android.R.color.darker_gray,null));
                 binding.resendCode.setEnabled(false);
                 clicked=true;
-                new CountDownTimer(60000,1000){
+                new CountDownTimer(5000,1000){
                     @Override
                     public void onTick(long l) {
                             binding.timerText.setText(String.format(Locale.getDefault(),"%02d:%02d",(int) (l /1000)/60,(int) (l /1000) % 60));
